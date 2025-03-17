@@ -1,0 +1,35 @@
+﻿@model WebApplication1.Models.SanPham
+
+@{
+    ViewBag.Title = "Chỉnh sửa sản phẩm";
+}
+
+<h2>Chỉnh sửa sản phẩm</h2>
+
+@using (Html.BeginForm("Edit", "SanPham", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TenSanPham)
+        @Html.TextBoxFor(m => m.TenSanPham, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MoTa)
+        @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = 3 })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Gia)
+        @Html.TextBoxFor(m => m.Gia, new { @class = "form-control", type = "number", step = "0.01" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.HinhAnh)
+        @Html.TextBoxFor(m => m.HinhAnh, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-success">Cập nhật</button>
+    <a href="@Url.Action("Index", "SanPham")" class="btn btn-secondary">Quay lại</a>
+}

@@ -1,0 +1,101 @@
+﻿@model IEnumerable<WebApplication1.Models.SanPham>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        padding: 30px 0;
+    }
+
+    .product-item {
+        width: 220px;
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 15px;
+        font-family: 'Segoe UI', sans-serif;
+        position: relative;
+        background-color: white;
+    }
+
+        .product-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .product-item .name {
+            font-weight: 600;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .product-item .price {
+            color: #e74c3c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .product-item .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .product-item .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #e74c3c;
+            color: #fff;
+            font-size: 12px;
+            padding: 4px 7px;
+            border-radius: 50px;
+        }
+
+        .product-item .btn {
+            margin-top: 10px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            text-decoration: none;
+            display: inline-block;
+        }
+</style>
+
+<h2 style="text-align:center; margin-top: 20px;">Sản phẩm nổi bật</h2>
+
+<div class="product-grid">
+    @foreach (var item in Model)
+    {
+        <div class="product-item">
+            @if (item.Gia < 100)
+            {
+                <span class="discount">-15%</span>
+            }
+
+            <img src="@Url.Content(item.HinhAnh)" alt="@item.TenSanPham" />
+            <div class="name">@item.TenSanPham</div>
+            <div>
+                <span class="price">@String.Format("{0:N0}", item.Gia)đ</span>
+                @if (item.Gia < 100)
+                {
+                    <span class="old-price">@String.Format("{0:N0}", item.Gia * 1.15M)đ</span>
+                }
+            </div>
+            <a href="@Url.Action("Info", "SanPham", new { id = item.ID })" class="btn">Xem chi tiết</a>
+        </div>
+    }
+</div>

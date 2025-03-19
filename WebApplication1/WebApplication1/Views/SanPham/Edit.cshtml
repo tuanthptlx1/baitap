@@ -11,6 +11,7 @@
     @using (Html.BeginForm("Edit", "SanPham", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.HiddenFor(m => m.ID)
+        @Html.HiddenFor(m => m.HinhAnh)
 
         <div class="form-group mb-3">
             @Html.LabelFor(m => m.TenSanPham)

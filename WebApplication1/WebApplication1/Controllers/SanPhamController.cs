@@ -67,24 +67,47 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Nếu người dùng chọn ảnh mới
+                var spCu = db.SanPhams.Find(sp.ID); // Lấy sản phẩm cũ từ DB
+
+                if (spCu == null)
+                    return HttpNotFound();
+
+                // Xử lý ảnh mới nếu có
                 if (UploadHinhAnh != null && UploadHinhAnh.ContentLength > 0)
                 {
-                    string fileName = Path.GetFileName(UploadHinhAnh.FileName);
-                    string path = Path.Combine(Server.MapPath("~/Content/Images/"), fileName);
+                    string folderPath = Server.MapPath("~/Content/Images/");
+
+                    // Tạo thư mục nếu chưa có
+                    if (!Directory.Exists(folderPath))
+                        Directory.CreateDirectory(folderPath);
+
+                    // Tạo tên file ảnh duy nhất để tránh trùng
+                    string fileName = DateTime.Now.Ticks + "-" + Path.GetFileName(UploadHinhAnh.FileName);
+                    string path = Path.Combine(folderPath, fileName);
+
+                    // Lưu ảnh
                     UploadHinhAnh.SaveAs(path);
 
+                    // Gán đường dẫn lưu vào trường HinhAnh
                     sp.HinhAnh = "~/Content/Images/" + fileName;
                 }
+                else
+                {
+                    // Giữ nguyên ảnh cũ nếu không chọn ảnh mới
+                    sp.HinhAnh = spCu.HinhAnh;
+                }
 
-                db.Entry(sp).State = EntityState.Modified;
+                // Cập nhật thông tin sản phẩm
+                db.Entry(spCu).CurrentValues.SetValues(sp);
                 db.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
             ViewBag.DanhMucID = new SelectList(db.DanhMucs, "ID", "TenDanhMuc", sp.IDDanhMuc);
             return View(sp);
         }
+
 
 
 

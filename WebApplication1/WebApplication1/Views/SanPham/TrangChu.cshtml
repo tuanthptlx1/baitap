@@ -8,14 +8,14 @@
             Chọn danh mục
         </button>
         <ul class="dropdown-menu" id="danhMucDropdown" style="max-height: 300px; overflow-y: auto;">
-            <!-- Danh mục sẽ được load bằng JS -->
+          
         </ul>
     </div>
 
     <div class="mt-4">
-        <h5 id="tenDanhMucHienTai" class="text-secondary">Chưa chọn danh mục nào</h5>
+        
         <div class="row row-cols-1 row-cols-md-4 g-4 mt-2" id="sanPhamContainer">
-            <!-- Sản phẩm sẽ hiển thị ở đây -->
+        
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
 @section scripts {
     <script>
         $(document).ready(function () {
-            // Gọi API lấy danh mục
+           
             $.getJSON("/Api/GetDanhMucs", function (data) {
                 let html = '';
                 data.forEach(function (dm) {
@@ -32,7 +32,12 @@
                 $('#danhMucDropdown').html(html);
             });
 
-            // Khi click vào 1 danh mục
+           
+            $.getJSON('/Api/GetTatCaSanPham', function (data) {
+                renderSanPham(data);
+            });
+
+          
             $(document).on('click', '.dropdown-item', function (e) {
                 e.preventDefault();
                 const id = $(this).data('id');
@@ -40,30 +45,36 @@
 
                 $('#tenDanhMucHienTai').text("Danh mục: " + ten);
 
-                // Gọi API lấy sản phẩm
+               
                 $.getJSON('/Api/GetSanPhamTheoDanhMuc', { danhMucId: id }, function (data) {
-                    let html = '';
-                    if (data.length === 0) {
-                        html = "<p class='text-muted'>Không có sản phẩm nào.</p>";
-                    } else {
-                        data.forEach(sp => {
-                            html += `
-                                    <div class="col">
-                                        <div class="card h-100">
-                                            <img src="${sp.HinhAnh}" class="card-img-top" style="height:200px; object-fit:cover;" />
-                                            <div class="card-body">
-                                                <h5 class="card-title">${sp.TenSanPham}</h5>
-                                                <p class="card-text">${sp.MoTa}</p>
-                                                <p class="card-text text-danger fw-bold">${Number(sp.Gia).toLocaleString()} ₫</p>
-                                            </div>
-                                        </div>
-                                    </div>`;
-                        });
-                    }
-
-                    $('#sanPhamContainer').html(html);
+                    renderSanPham(data);
                 });
             });
+
+            
+            function renderSanPham(data) {
+                let html = '';
+                if (data.length === 0) {
+                    html = "<p class='text-muted'>Không có sản phẩm nào.</p>";
+                } else {
+                    data.forEach(sp => {
+                        html += `
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="${sp.HinhAnh}" class="card-img-top" style="height:200px; object-fit:cover;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">${sp.TenSanPham}</h5>
+                                            <p class="card-text">${sp.MoTa}</p>
+                                            <p class="card-text text-danger fw-bold">${Number(sp.Gia).toLocaleString()} ₫</p>
+                                        </div>
+                                    </div>
+                                </div>`;
+                    });
+                }
+
+                $('#sanPhamContainer').html(html);
+            }
         });
     </script>
 }
+

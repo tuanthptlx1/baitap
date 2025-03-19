@@ -38,6 +38,21 @@ namespace WebApplication1.Controllers
 
             return Json(danhMucs, JsonRequestBehavior.AllowGet);
         }
+        public JsonResult GetTatCaSanPham()
+        {
+            var sp = db.SanPhams
+                      .Select(x => new
+                      {
+                          x.ID,
+                          x.TenSanPham,
+                          x.MoTa,
+                          x.Gia,
+                          x.HinhAnh
+                      })
+                      .ToList();
+
+            return Json(sp, JsonRequestBehavior.AllowGet);
+        }
 
         public ActionResult Index()
         {

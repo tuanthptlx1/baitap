@@ -26,6 +26,10 @@
         @Html.Label("Chọn ảnh từ máy")
         <input type="file" name="fileUpload" class="form-control" />
     </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.IDDanhMuc, "Danh mục sản phẩm")
+        @Html.DropDownListFor(m => m.IDDanhMuc, (SelectList)ViewBag.IDDanhMuc, "-- Chọn danh mục --", new { @class = "form-control" })
+    </div>
 
 
     <button type="submit" class="btn btn-primary">Thêm mới</button>

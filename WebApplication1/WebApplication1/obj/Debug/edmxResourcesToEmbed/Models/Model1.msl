@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="th1ModelStoreContainer" CdmEntityContainer="th1Entities">
+    <EntitySetMapping Name="DanhMucs">
+      <EntityTypeMapping TypeName="th1Model.DanhMuc">
+        <MappingFragment StoreEntitySet="DanhMuc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenDanhMuc" ColumnName="TenDanhMuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="SanPhams">
       <EntityTypeMapping TypeName="th1Model.SanPham">
         <MappingFragment StoreEntitySet="SanPham">
@@ -10,6 +18,7 @@
           <ScalarProperty Name="Gia" ColumnName="Gia" />
           <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
           <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="IDDanhMuc" ColumnName="IDDanhMuc" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

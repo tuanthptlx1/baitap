@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication1.Models;
+using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
@@ -11,9 +13,12 @@ namespace WebApplication1.Controllers
     {
         private th1Entities db = new th1Entities();
 
+
+
         // GET: SanPham/Add
         public ActionResult Add()
         {
+            ViewBag.IDDanhMuc = new SelectList(db.DanhMucs, "ID", "TenDanhMuc");
             return View();
         }
 
@@ -33,54 +38,56 @@ namespace WebApplication1.Controllers
 
                 sp.NgayCapNhat = DateTime.Now;
 
-                db.SanPhams.Add(sp); // SỬA chỗ này
+                db.SanPhams.Add(sp);
                 db.SaveChanges();
 
-                return RedirectToAction("Info", new { id = sp.ID });
+                return RedirectToAction("TrangChu");
             }
 
+            ViewBag.IDDanhMuc = new SelectList(db.DanhMucs, "ID", "TenDanhMuc", sp.IDDanhMuc); // Giữ lại dropdown khi có lỗi
             return View(sp);
         }
+
 
         // GET: SanPham/Edit/5
         public ActionResult Edit(int id)
         {
-            var sp = db.SanPhams.FirstOrDefault(x => x.ID == id); // SỬA chỗ này
-            if (sp == null) return HttpNotFound();
+            var sp = db.SanPhams.Find(id);
+            if (sp == null)
+                return HttpNotFound();
+
+            ViewBag.DanhMucID = new SelectList(db.DanhMucs, "ID", "TenDanhMuc", sp.IDDanhMuc);
             return View(sp);
         }
+
 
         // POST: SanPham/Edit
         [HttpPost]
-        public ActionResult Edit(SanPham sp)
+        public ActionResult Edit(SanPham sp, HttpPostedFileBase UploadHinhAnh)
         {
             if (ModelState.IsValid)
             {
-                var spOld = db.SanPhams.FirstOrDefault(x => x.ID == sp.ID); // SỬA chỗ này
-                if (spOld != null)
+                // Nếu người dùng chọn ảnh mới
+                if (UploadHinhAnh != null && UploadHinhAnh.ContentLength > 0)
                 {
-                    spOld.TenSanPham = sp.TenSanPham;
-                    spOld.MoTa = sp.MoTa;
-                    spOld.Gia = sp.Gia;
-                    spOld.HinhAnh = sp.HinhAnh;
-                    spOld.NgayCapNhat = DateTime.Now;
+                    string fileName = Path.GetFileName(UploadHinhAnh.FileName);
+                    string path = Path.Combine(Server.MapPath("~/Content/Images/"), fileName);
+                    UploadHinhAnh.SaveAs(path);
 
-                    db.SaveChanges();
+                    sp.HinhAnh = "~/Content/Images/" + fileName;
                 }
 
-                return RedirectToAction("Info", new { id = sp.ID });
+                db.Entry(sp).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
 
+            ViewBag.DanhMucID = new SelectList(db.DanhMucs, "ID", "TenDanhMuc", sp.IDDanhMuc);
             return View(sp);
         }
 
-        // GET: SanPham/Info/5
-        // GET: SanPham/Info
-        public ActionResult Info()
-        {
-            var danhSach = db.SanPhams.ToList();
-            return View(danhSach);
-        }
+
+
 
         public ActionResult Index()
         {
@@ -101,6 +108,16 @@ namespace WebApplication1.Controllers
 
             return RedirectToAction("Index"); // hoặc "Info" nếu bạn muốn quay lại trang thông tin
         }
+        public ActionResult TrangChu()
+        {
+            var danhMucs = db.DanhMucs.ToList();
+            var viewModel = danhMucs.Select(dm => new DanhMucSanPhamViewModel
+            {
+                TenDanhMuc = dm.TenDanhMuc,
+                SanPhams = db.SanPhams.Where(sp => sp.IDDanhMuc == dm.ID).ToList()
+            }).ToList();
 
+            return View(viewModel);
+        }
     }
 }

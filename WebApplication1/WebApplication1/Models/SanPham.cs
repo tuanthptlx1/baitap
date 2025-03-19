@@ -20,5 +20,8 @@ namespace WebApplication1.Models
         public Nullable<decimal> Gia { get; set; }
         public string HinhAnh { get; set; }
         public Nullable<System.DateTime> NgayCapNhat { get; set; }
+        public Nullable<int> IDDanhMuc { get; set; }
+    
+        public virtual DanhMuc DanhMuc { get; set; }
     }
 }

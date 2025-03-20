@@ -13,7 +13,6 @@ namespace WebApplication1.Controllers
         // GET: Api
         private th1Entities db = new th1Entities();
 
-        // Trả về danh sách sản phẩm theo ID danh mục (dạng JSON)
         public JsonResult GetSanPhamTheoDanhMuc(int danhMucId)
         {
             var sp = db.SanPhams
@@ -40,18 +39,22 @@ namespace WebApplication1.Controllers
         }
         public JsonResult GetTatCaSanPham()
         {
-            var sp = db.SanPhams
-                      .Select(x => new
-                      {
-                          x.ID,
-                          x.TenSanPham,
-                          x.MoTa,
-                          x.Gia,
-                          x.HinhAnh
-                      })
-                      .ToList();
+            var danhMucs = db.DanhMucs
+                .Select(dm => new
+                {
+                    ID = dm.ID,
+                    TenDanhMuc = dm.TenDanhMuc,
+                    SanPhams = dm.SanPhams.Select(sp => new
+                    {
+                        sp.ID,
+                        sp.TenSanPham,
+                        sp.MoTa,
+                        sp.Gia,
+                        sp.HinhAnh
+                    }).ToList()
+                }).ToList();
 
-            return Json(sp, JsonRequestBehavior.AllowGet);
+            return Json(danhMucs, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Index()

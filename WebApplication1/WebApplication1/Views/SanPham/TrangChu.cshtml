@@ -8,15 +8,11 @@
             Chọn danh mục
         </button>
         <ul class="dropdown-menu" id="danhMucDropdown" style="max-height: 300px; overflow-y: auto;">
-          
         </ul>
     </div>
 
-    <div class="mt-4">
-        
-        <div class="row row-cols-1 row-cols-md-4 g-4 mt-2" id="sanPhamContainer">
-        
-        </div>
+    <div class="mt-4" id="tatCaSanPhamContainer">
+
     </div>
 </div>
 
@@ -25,56 +21,73 @@
         $(document).ready(function () {
            
             $.getJSON("/Api/GetDanhMucs", function (data) {
-                let html = '';
+                let html = '<li><a class="dropdown-item" href="#" data-id="0">Tất cả danh mục</a></li>';
                 data.forEach(function (dm) {
                     html += `<li><a class="dropdown-item" href="#" data-id="${dm.ID}">${dm.TenDanhMuc}</a></li>`;
                 });
                 $('#danhMucDropdown').html(html);
             });
 
-           
+        
             $.getJSON('/Api/GetTatCaSanPham', function (data) {
-                renderSanPham(data);
+                renderSanPhamTheoDanhMuc(data);
             });
 
           
             $(document).on('click', '.dropdown-item', function (e) {
                 e.preventDefault();
                 const id = $(this).data('id');
-                const ten = $(this).text();
 
-                $('#tenDanhMucHienTai').text("Danh mục: " + ten);
-
-               
-                $.getJSON('/Api/GetSanPhamTheoDanhMuc', { danhMucId: id }, function (data) {
-                    renderSanPham(data);
-                });
-            });
-
-            
-            function renderSanPham(data) {
-                let html = '';
-                if (data.length === 0) {
-                    html = "<p class='text-muted'>Không có sản phẩm nào.</p>";
+                if (id === 0) {
+                 
+                    $('.danh-muc-block').show();
                 } else {
-                    data.forEach(sp => {
-                        html += `
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="${sp.HinhAnh}" class="card-img-top" style="height:200px; object-fit:cover;" />
-                                        <div class="card-body">
-                                            <h5 class="card-title">${sp.TenSanPham}</h5>
-                                            <p class="card-text">${sp.MoTa}</p>
-                                            <p class="card-text text-danger fw-bold">${Number(sp.Gia).toLocaleString()} ₫</p>
-                                        </div>
-                                    </div>
-                                </div>`;
+                 
+                    $('.danh-muc-block').each(function () {
+                        if ($(this).data('id') == id) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
                     });
                 }
+            });
 
-                $('#sanPhamContainer').html(html);
+         
+            function renderSanPhamTheoDanhMuc(data) {
+                let html = '';
+                data.forEach(dm => {
+                    let sanPhamHtml = '';
+
+                    if (dm.SanPhams.length === 0) {
+                        sanPhamHtml = "<p class='text-muted'>Chưa có sản phẩm.</p>";
+                    } else {
+                        dm.SanPhams.forEach(sp => {
+                            sanPhamHtml += `
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="${sp.HinhAnh}" class="card-img-top" style="height:200px; object-fit:cover;" />
+                                            <div class="card-body">
+                                                <h5 class="card-title">${sp.TenSanPham}</h5>
+                                                <p class="card-text">${sp.MoTa}</p>
+                                                <p class="card-text text-danger fw-bold">${Number(sp.Gia).toLocaleString()} ₫</p>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                        });
+                    }
+
+                    html += `
+                            <div class="danh-muc-block mt-4" data-id="${dm.ID}">
+                                <h4 class="text-primary">${dm.TenDanhMuc}</h4>
+                                <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
+                                    ${sanPhamHtml}
+                                </div>
+                            </div>`;
+                });
+
+                $('#tatCaSanPhamContainer').html(html);
             }
         });
     </script>
 }
-

@@ -3,64 +3,68 @@
   "WorkspaceRootPath": "E:\\luu upload\\nr\\baitap\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\Model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Models\\Model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\SanPhamController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Controllers\\SanPhamController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\Model1.Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Models\\Model1.Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Views\\SanPham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\TrangChu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Views\\SanPham\\TrangChu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\ApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Controllers\\ApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\BundleConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\App_Start\\BundleConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|e:\\luu upload\\nr\\baitap\\webapplication1\\webapplication1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\ApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Controllers\\ApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|e:\\luu upload\\nr\\baitap\\webapplication1\\webapplication1\\views\\shared\\_sanphamtheodanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_sanphamtheodanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Views\\SanPham\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\TrangChu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Views\\SanPham\\TrangChu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\Model1.Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Models\\Model1.Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\App_Start\\RouteConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\SanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Models\\SanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\BundleConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\App_Start\\BundleConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\DanhMuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Models\\DanhMuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Views\\SanPham\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\SanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Models\\SanPham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\DanhMuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Models\\DanhMuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Views\\SanPham\\Add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Views\\SanPham\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\SanPhamController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\Controllers\\SanPhamController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E826032-A214-4CF0-9906-FF257962A7B3}|WebApplication1\\WebApplication1.csproj|solutionrelative:WebApplication1\\Views\\SanPham\\Add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +86,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "_SanPhamTheoDanhMuc.cshtml",
+              "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\Shared\\_SanPhamTheoDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_SanPhamTheoDanhMuc.cshtml",
+              "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\Shared\\_SanPhamTheoDanhMuc.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_SanPhamTheoDanhMuc.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T08:50:04.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Model1.Context.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\Model1.Context.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\Model1.Context.cs",
@@ -90,12 +107,11 @@
               "RelativeToolTip": "WebApplication1\\Models\\Model1.Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:16:18.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:16:18.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "WebApplication1\\App_Start\\RouteConfig.cs",
@@ -103,12 +119,11 @@
               "RelativeToolTip": "WebApplication1\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:04:47.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:04:47.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "WebApplication1\\App_Start\\BundleConfig.cs",
@@ -116,64 +131,63 @@
               "RelativeToolTip": "WebApplication1\\App_Start\\BundleConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAcwBYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:03:46.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:03:46.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ApiController.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\ApiController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ApiController.cs",
               "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\ApiController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T03:41:26.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\SanPham\\Edit.cshtml",
               "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Edit.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\SanPham\\Edit.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-19T03:27:41.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TrangChu.cshtml",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\TrangChu.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\SanPham\\TrangChu.cshtml",
               "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\TrangChu.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\SanPham\\TrangChu.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-19T03:05:15.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "DanhMucSanPhamViewModel.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs",
               "RelativeDocumentMoniker": "WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs",
               "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs",
               "RelativeToolTip": "WebApplication1\\ViewModels\\DanhMucSanPhamViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T03:02:13.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
@@ -181,12 +195,11 @@
               "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T02:58:11.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T02:58:11.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "SanPham.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\SanPham.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\SanPham.cs",
@@ -194,12 +207,11 @@
               "RelativeToolTip": "WebApplication1\\Models\\SanPham.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T02:29:19.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T02:29:19.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DanhMuc.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\DanhMuc.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\DanhMuc.cs",
@@ -207,12 +219,11 @@
               "RelativeToolTip": "WebApplication1\\Models\\DanhMuc.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T02:26:15.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T02:26:15.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\SanPham\\Index.cshtml",
@@ -220,12 +231,11 @@
               "RelativeToolTip": "WebApplication1\\Views\\SanPham\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T02:23:35.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T02:23:35.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Models\\Model1.edmx",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\Model1.edmx",
@@ -237,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Web.config",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Web.config",
               "RelativeDocumentMoniker": "WebApplication1\\Web.config",
@@ -250,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Add.cshtml",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Views\\SanPham\\Add.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\SanPham\\Add.cshtml",
@@ -258,18 +268,17 @@
               "RelativeToolTip": "WebApplication1\\Views\\SanPham\\Add.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAswCIAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T01:50:22.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T01:50:22.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "SanPhamController.cs",
               "DocumentMoniker": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\SanPhamController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\SanPhamController.cs",
               "ToolTip": "E:\\luu upload\\nr\\baitap\\WebApplication1\\WebApplication1\\Controllers\\SanPhamController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\SanPhamController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAmwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T01:47:20.872Z",
               "EditorCaption": ""

@@ -1,7 +1,18 @@
-﻿
-@{
-    ViewBag.Title = "_SanPhamTheoDanhMuc";
-}
+﻿@model Tuple<string, List<WebApplication1.Models.SanPham>>
 
-<h2>_SanPhamTheoDanhMuc</h2>
-
+<h4 class="text-primary mt-4">@Model.Item1</h4>
+<div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
+    @foreach (var sp in Model.Item2)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="@sp.HinhAnh" class="card-img-top" style="height:200px; object-fit:cover;" />
+                <div class="card-body">
+                    <h5 class="card-title">@sp.TenSanPham</h5>
+                    <p class="card-text">@sp.MoTa</p>
+                    <p class="card-text text-danger fw-bold">@String.Format("{0:N0} ₫", sp.Gia)</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
